@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img data-testid="profilePicture" src="https://via.placeholder.com/150" alt="Profile Picture">
+        </div>
+
+        <!-- Name and Title -->
+        <h2 data-testid="fullName">John Doe</h2>
+        <p data-testid="jobTitle" class="title">Frontend Developer</p>
+
+        <!-- Bio -->
+        <p data-testid="shortBio" class="bio">
+            Passionate frontend developer with a keen eye for creating beautiful, responsive web applications. 
+            Experienced in modern JavaScript frameworks and committed to writing clean, maintainable code.
+        </p>
+
+        <!-- Location and Contact -->
+        <div class="info">
+            <p data-testid="currentLocation">
+                <i class="fas fa-map-marker-alt"></i>
+                New York, United States
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a data-testid="emailAddress" href="mailto:john.doe@example.com">john.doe@example.com</a>
+            </p>
+            <p>
+                <i class="fas fa-clock"></i>
+                <span data-testid="currentTimeUTC">Loading...</span>
+            </p>
+        </div>
+
+        <!-- Social Links -->
+        <div data-testid="socialLinks" class="social-links">
+            <a href="https://github.com" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
